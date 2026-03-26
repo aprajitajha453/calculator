@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Mini-Project</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/83a75e82fe.js" crossorigin="anonymous"></script>
+  <script src="./script.js"defer></script>
+
+</head>
+
+    <body class="w-full h-screen bg-gray-900 flex justify-center items-center">
+     <div class="w-[500px] h-[600px] bg-gray-400 mt-[50px] ml-[500px] rounded-[5%] mr-[500px]" >
+        <div class="mt-10">
+      
+    <div class="h-[70px] w-[450px] bg-gray-300 p-5 ml-[20px] rounded-[4%]   justify-end overflow-hidden"id="container"></div>
+    <div class="flex gap-[20px] mt-[20px] ml-[60px] hover:bg-gray-400">
+         <div class="h-[80px] w-[80px] bg-gray-300 text-[20px] hover:bg-gray-900 hover:text-white pl-[25px] pt-[30px] rounded-[10%]" onclick="allClear()">AC</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)">*</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)"> /</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="del()">X</div>
+      </div>
+      <!-- //...................// -->
+      
+      <div class="flex gap-[20px] mt-[10px] ml-[60px]">
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)">1</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)">2</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)"> 3</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)">4</div>
+      </div>
+      <!-- ////.......................// -->
+        <div class="flex gap-[20px] mt-[10px] ml-[60px]">
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%] "onclick="showText(this)" >5</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)">6</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)"> 7</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)">8</div>
+      </div>
+      
+      <!-- ///.....................// -->
+
+
+      <div class="flex gap-[20px] mt-[10px] ml-[60px]">
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)">9</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)">0</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)">+</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)">-</div>
+      </div> 
+      
+      
+      <!-- < --//.....................//  -->
+
+        <div class="flex gap-[20px] mt-[10px] ml-[60px]">
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)">.</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="showText(this)">%</div>
+         <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[35px] pt-[30px] rounded-[10%]" onclick="calculation()">=</div>
+         <!-- <div class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white pl-[15px] pt-[30px] rounded-[10%]">On/Of</div>
+      </div> -->
+      <div onclick="togglePower()" id="powerBtn"
+     class="h-[80px] w-[80px] bg-gray-300 hover:bg-gray-900 hover:text-white flex      items-center justify-center rounded-[10%] cursor-pointer">
+     OFF
+      </div>
+       
+
+       
+     </div>
+     
+</body>
+</html>
